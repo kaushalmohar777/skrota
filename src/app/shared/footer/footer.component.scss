@@ -1,0 +1,107 @@
+footer.footerman {
+    background: #024602;
+    padding: 80px 0 0px;
+    color: #fff;
+}
+
+footer.footerman a {
+    color: #fff;
+}
+.footercopy {
+    border-top: 1px solid #106710;
+    margin-top: 60px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+.footercopy p {
+    margin: 0;
+}
+.footerman ul {
+    margin: 0;
+    padding: 0;
+}
+.footerman ul li {
+    list-style: none;
+}
+footer.footerman a {
+    text-decoration: none;
+}
+footer.footerman li {
+    list-style: none;
+}
+.logofoo {
+    display: block;
+}
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+  }
+  
+  ul.social-network li {
+    display: inline;
+    margin: 0 7px;
+  }
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid #fff;
+  }
+  
+  .social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  .footertoprow > div {
+    border-left: 1px solid #106710;
+    padding-top: 45px;
+    padding-bottom: 34px;
+}
+.footertoprow > div:first-child {
+    border-left: 0;
+}
+
+ul.footermenu {
+    width: fit-content;
+}
+ul.footermenu a {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+}
+ul.footermenu li {
+    margin-bottom: 5px;
+}
+.Kontakta h4 {
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 19px;
+    font-family: "Proxima Soft";
+}
+.footicon {
+    position: absolute;
+    left: 0;
+    top: 11%;
+    font-size: 19px;
+}
+.Kontakta li {
+    position: relative;
+    padding-left: 27px;
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+footer.footerman a:hover {
+    color: #3ca73c !important;
+}

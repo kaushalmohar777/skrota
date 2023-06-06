@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Proxima Soft';
+    src: url('./assets/fonts/ProximaSoft-Regular.woff2') format('woff2'),
+        url('./assets/fonts/ProximaSoft-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('./assets/fonts/MuseoSans-500.woff2') format('woff2'),
+        url('./assets/fonts/MuseoSans-500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container {
+    max-width: 1525px;
+}
+
+body {
+    font-family: 'Proxima Soft';
+    background: #F8F8F8;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Museo Sans';
+}
+a.btn.btn-primary {
+    height: 78px;
+    background: #228C22;
+    border-radius: 100px;
+    border-color: #228C22;
+    font-family: "Proxima Soft";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 13px 37px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a.btn.btn-primary:hover {
+    background: black;
+    border-color: #000;
+}
