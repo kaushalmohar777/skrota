@@ -1,0 +1,47 @@
+.contatc-secbox .shadow {
+    background: #fff;
+}
+.contatc-secbox {
+    color: #000000;
+    font-size: 20px;
+}
+.contatc-secbox a {
+    color: #000;
+    text-decoration: none;
+}
+.contact1 h2 {
+    font-size: 60px;
+}
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+  }
+  
+  ul.social-network li {
+    display: inline;
+    margin: 0 11px;
+  }
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    border: 1px solid #fff;
+    background: #106710;
+    line-height: 2.2;
+    color: #fff;
+  }
+  
+  .social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+  }
