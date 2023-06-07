@@ -55,3 +55,14 @@ a.btn.btn-primary:hover {
     background: black;
     border-color: #000;
 }
+
+
+
+@media(max-width: 1200px){
+    a.btn.btn-primary {
+        height: 63px;
+        font-size: 18px;
+        padding: 11px 29px;
+    }
+
+}

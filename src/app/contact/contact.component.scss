@@ -45,3 +45,63 @@ ul.social-network {
     line-height: 30px;
     text-align: center;
   }
+  section.home-section3 {
+    padding-top: 85px;
+    padding-bottom: 100px;
+}
+
+section.home-section3 form.row.g-3 {
+    padding: 47px 42px;
+}
+
+.fomrtitle h3 {
+    font-size: 53px;
+    line-height: 1.1;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.fomrtitle p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+section.home-section3 form input {
+    height: 58px;
+}
+section.home-section3 form textarea {
+    height: 133px;
+}
+section.home-section3 form button.btn.btn-primary {
+    height: 58px;
+    background: #228C22;
+    border-radius: 100px;
+    border-color: #228C22;
+    font-family: "Proxima Soft";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 3px 63px;
+}
+
+.home-section3 > .container {
+    max-width: 1800px;
+    padding-right: 115px;
+}
+
+.home-section3 > .container > .row > .col-md-6 {
+    width: 53%;
+}
+section.home-section3.home-section5 {
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.home-section5 img.Ellipse1img {
+  position: absolute;
+  top: -119px;
+  z-index: -1;
+  left: -54px;
+}

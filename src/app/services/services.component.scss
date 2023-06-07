@@ -1,0 +1,44 @@
+.banner-sec h2 {
+    font-weight: 400;
+    font-size: 59px;
+    line-height: 62px;
+    color: #000000;
+    margin-bottom: 31px;
+}
+img.banerrightimg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.banner-sec p {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 1.3;
+    color: #4A4A4A;
+}
+.banner-sec h2 span {
+    position: relative;
+}
+.banner-sec h2 span:after {
+    content: "";
+    bottom: -5px;
+    height: 27px;
+    width: 100%;
+    display: block;
+    background: #228c22;
+    position: absolute;
+    z-index: -1;
+}
+.banner-sec a.btn.btn-primary {
+    margin-top: 25px;
+}
+
+.banner-sec {
+    padding-top: 85px;
+    padding-bottom: 290px;
+}
+.aboutpagebaner p {
+    font-size: 18px;
+    line-height: 1.6;
+}
