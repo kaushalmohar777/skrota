@@ -105,3 +105,54 @@ ul.footermenu li {
 footer.footerman a:hover {
     color: #3ca73c !important;
 }
+
+
+
+@media(max-width: 1200px){
+
+    .row.footertoprow {
+        font-size: 16px;
+    }
+    .footercopy {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width: 992px){
+
+    .footertoprow > div {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .logofoo img {
+        max-width: 200px;
+    }
+
+
+}
+
+@media(max-width: 767px){ 
+
+    .footertoprow > div {
+        border-left: 0;
+    }
+    .footertoprow {
+        padding: 0 20px;
+    }
+    footer.footerman{
+        padding: 45px 0 0px;
+    }
+    .footercopy[_ngcontent-ng-c3165712835] {
+        margin-top: 24px;
+    }
+
+
+
+}
+
+
+
+
+

@@ -66,3 +66,14 @@ a.btn.btn-primary:hover {
     }
 
 }
+
+@media(max-width: 767px){
+
+    a.btn.btn-primary {
+        height: 50px;
+        font-size: 15px;
+        padding: 9px 29px;
+    }
+
+}
+

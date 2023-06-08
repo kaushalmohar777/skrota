@@ -63,3 +63,70 @@ section.aboutsec3 {
 .aboutsec4 .container {
     max-width: 1610px;
 }
+
+
+@media(max-width: 1200px){
+    img.banerrightimg {
+        width: 64%;
+        top: 25px;
+    }
+
+    .banner-sec{
+        padding-top: 17px;
+        padding-bottom: 40px;
+    }
+    .banner-sec h2 {
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    h3.sectitle {
+        font-size: 35px;
+    }
+    .aboutsec3 h2 {
+        font-size: 40px;
+        transform: translateY(-10px);
+    }
+
+}
+
+@media(max-width: 992px){
+
+    img.banerrightimg {
+        width: 58%;
+        top: 25px;
+    }
+}
+
+
+
+@media(max-width: 767px){
+    h3.sectitle {
+        font-size: 28px;
+    }
+    img.banerrightimg {
+        position: relative;
+        top: 0;
+        display: block;
+        margin-left: auto;
+        width: 100%;
+        margin-top: -19px;
+    }
+    .banner-sec h2 {
+        font-size: 35px;
+    }
+    .aboutsec3 h2 {
+        font-size: 35px;
+        transform: translateY(0px);
+        padding-top: 35px;
+    }
+    section.aboutsec3 {
+        margin-top: 0;
+    }
+    .aboutpagebaner .col-xl-4 {
+        padding: 0 0 !important;
+    }
+}
+
+

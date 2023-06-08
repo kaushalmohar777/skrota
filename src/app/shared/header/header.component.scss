@@ -35,3 +35,24 @@ header.man-header {
 .mobile-menu .offcanvas-header {
     background: #ddecdd;
 }
+
+button.moblbtn {
+    background: #228c22;
+    box-shadow: none;
+    border: 1px solid #228c22;
+    width: 38px;
+    color: #fff;
+    height: 38px;
+    border-radius: 3px;
+}
+.mobile-menu a.nav-link.active {
+    color: #228c22;
+}
+
+
+@media(max-width: 767px){
+    header.man-header[_ngcontent-ng-c192600217] {
+        padding: 20px 9px 20px !important;
+    }
+}
+
