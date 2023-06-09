@@ -6,6 +6,10 @@ import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
+  {
+    path:'', component: HomeComponent,
+    pathMatch:'full'
+  },
 {
   path:'home', component: HomeComponent,
 },
@@ -14,12 +18,15 @@ const routes: Routes = [
 },
 { path:'contact', component: ContactComponent },
 { path:'services', component: ServicesComponent },
-{ path: '', redirectTo: 'home', pathMatch: 'full' }
+// { path: '', redirectTo: 'home', pathMatch: 'full' }
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{
+   useHash: false,
+    anchorScrolling: 'enabled'
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

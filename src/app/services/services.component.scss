@@ -42,3 +42,35 @@ img.banerrightimg {
     font-size: 18px;
     line-height: 1.6;
 }
+
+@media(max-width: 1200px){
+
+    img.banerrightimg{
+        position: relative;
+    }
+    .banner-sec {
+        padding-top: 0px;
+        padding-bottom: 84px;
+    } 
+}
+
+@media(max-width: 992px){
+    .banner-sec h2 {
+        font-size: 39px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+    .banner-sec h2 br {
+        display: none;
+    }
+
+}
+@media(max-width: 767px){
+    .banner-sec h2 {
+        font-size: 28px;
+        margin-top: 32px;
+    }
+    .banner-sec[_ngcontent-ng-c2986306557] {
+        padding-bottom: 50px;
+    }
+}
