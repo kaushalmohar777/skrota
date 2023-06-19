@@ -1,3 +1,4 @@
+
 <section class="container-fluid banner-sec">
   <img src="../../assets/images/bannerbg.png" class="banerrightimg" />
   <div class="container">
@@ -91,7 +92,9 @@
       <img src="../../assets/images/car3.png">
     </div>
     <div class="col m-2 m-xl-0">
-      <form class="row g-3">
+      <!-- submitUser(registerUser.value)  -->
+      <form class="row g-3" [formGroup]="registerUser"
+      (ngSubmit)="submitUser()">
 
         <div class="col-12 fomrtitle">
           <h3> Få bud <br> frånbilskrothandlare!</h3>
@@ -99,37 +102,115 @@
         </div>
 
         <div class="col-md-6">
-          <input type="text" class="form-control"  placeholder="Förnamn" />
+          <input type="email" class="form-control"  placeholder="xyz@xyz.com" formControlName="username" />
+
+          <div *ngIf="isSubmitted && f['username']?.errors" >
+            <!-- <div *ngIf="f['firstname']?.errors?.required"> -->
+              <p style="color: red;font-size: 13px;padding-top: 3px;">Förnamn is required</p>
+            <!-- </div> -->
+          </div>
+
         </div>
+
         <div class="col-md-6">
+          <input type="email" class="form-control"  placeholder="förnamn" formControlName="firstname" />
+
+          <div *ngIf="isSubmitted && f['firstname']?.errors" >
+            <!-- <div *ngIf="f['firstname']?.errors?.required"> -->
+              <p style="color: red;font-size: 13px;padding-top: 3px;">Förnamn is required</p>
+            <!-- </div> -->
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+          <input type="text" class="form-control"  placeholder="Efternamn" formControlName="lastname" />
+
+          <div *ngIf="isSubmitted && f['lastname']?.errors" >
+              <p style="color: red;font-size: 13px;padding-top: 3px;">lastname is required</p>
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+          <input type="email" class="form-control"  placeholder="E-post" formControlName="epost"/>
+
+          <!-- <div *ngIf="isSubmitted && f['epost']?.errors" >
+              <p style="color: red;font-size: 13px;padding-top: 3px;">epost is required</p>
+          </div> -->
+
+        </div>
+
+        <div class="col-md-6">
+          <input type="tel" class="form-control"  placeholder="Telefon" formControlName="telphone"/>
+
+          <div *ngIf="isSubmitted && f['telphone']?.errors" >
+              <p style="color: red;font-size: 13px;padding-top: 3px;">telphone is required</p>
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+          <input type="text" class="form-control"  placeholder="Bil reg. nummer" formControlName="number"/>
+
+         <!--  <div *ngIf="isSubmitted && f['number']?.errors" >
+              <p style="color: red;font-size: 13px;padding-top: 3px;">number is required</p>
+          </div> -->
+
+        </div>
+
+        <div class="col-md-6">
+          <input type="text" class="form-control"  placeholder="Orginal Katalysator" formControlName="katalysator"/>
+
+          <!-- <div *ngIf="isSubmitted && f['katalysator']?.errors" >
+              <p style="color: red;font-size: 13px;padding-top: 3px;">katalysator is required</p>
+          </div> -->
+
+        </div>
+
+        <div class="col-md-6">
+          <input type="text" class="form-control"  placeholder="City" formControlName="city" />
+
+          <div *ngIf="isSubmitted && f['city']?.errors" >
+              <p style="color: red;font-size: 13px;padding-top: 3px;">City is required</p>
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+          <input type="text" class="form-control"  placeholder="Street" formControlName="street" />
+
+          <div *ngIf="isSubmitted && f['street']?.errors" >
+              <p style="color: red;font-size: 13px;padding-top: 3px;">Street is required</p>
+          </div>
+
+        </div>
+
+
+        <div class="col-md-6">
+          <input type="text" class="form-control"  placeholder="Postnummer" formControlName="postCode" />
+
+          <div *ngIf="isSubmitted && f['postCode']?.errors" >
+              <p style="color: red;font-size: 13px;padding-top: 3px;">postCode is required</p>
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+          <input type="text" class="form-control"  placeholder="uid" formControlName="uid" />
+
+          <div *ngIf="isSubmitted && f['uid']?.errors" >
+              <p style="color: red;font-size: 13px;padding-top: 3px;">uid is required</p>
+          </div>
+
+        </div>
+
+        <div class="col-12">
       
-          <input type="text" class="form-control"  placeholder="Efternamn" />
-        </div>
-        <div class="col-md-6">
-          <input type="email" class="form-control"  placeholder="E-post" />
-        </div>
-        <div class="col-md-6">
-          <input type="tel" class="form-control"  placeholder="Telefon" />
-        </div>
-        <div class="col-md-6">
-          <input type="text" class="form-control"  placeholder="Bil reg. nummer" />
-        </div>
-        <div class="col-md-6">
-          <input type="text" class="form-control"  placeholder="Orginal Katalysator"/>
-        </div>
-        <div class="col-md-6">
-          <input type="text" class="form-control"  placeholder="Gata" />
-        </div>
-        <div class="col-md-6">
-         
-          <input type="text" class="form-control"  placeholder="Postnummer"/>
-        </div>
-        <div class="col-md-6">
-          <input type="text" class="form-control"  placeholder="Ort"/>
         </div>
         
         <div class="col-12">
-          <textarea class="form-control mt-4 mb-4"  rows="3" placeholder="Övrig information"></textarea>
+          <textarea class="form-control mt-4 mb-4"  rows="3" placeholder="Övrig information" formControlName="desc"></textarea>
         </div>
         
         <div class="col-12">
@@ -141,3 +222,27 @@
   </div>
   
 </section>
+
+
+
+<button type="button" class="btn btn-primary" style="display: none;"  data-bs-toggle="modal" data-bs-target="#exampleModal" id="msgBtn">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Meddelande</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>{{Message}} </h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
