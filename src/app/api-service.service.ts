@@ -18,28 +18,28 @@ export class ApiServiceService {
   return this.httpclient.post(this.baseUrl+url,data);
   }
 
-  getLocation(lat:any,lng:any){
-    const url1 =
-    `https://maps.googleapis.com/maps/api/geocode/json?latlng=` +
-    lat +
-    "," +
-    lng +
-    `&timestamp=1331161200&key=AIzaSyAjphnR0HMqFj8dfxmG5Pa8kCUOg6aeqts`
-    const config = {
-    method: "get",
-    url: url1,
-    headers: {},
-    };
-    return new Observable<any>((observer) => {
-    axios(config)
-        .then(function (response: any): void {
-        observer.next(response.data);
-        // return response.data;
-        })
-        .catch(function (error: any): void {
-        observer.next(error);
-        });
-    });
-}
+//   getLocation(lat:any,lng:any){
+//     const url1 =
+//     `https://maps.googleapis.com/maps/api/geocode/json?latlng=` +
+//     lat +
+//     "," +
+//     lng +
+//     `&timestamp=1331161200&key=AIzaSyAjphnR0HMqFj8dfxmG5Pa8kCUOg6aeqts`
+//     const config = {
+//     method: "get",
+//     url: url1,
+//     headers: {},
+//     };
+//     return new Observable<any>((observer) => {
+//     axios(config)
+//         .then(function (response: any): void {
+//         observer.next(response.data);
+//         // return response.data;
+//         })
+//         .catch(function (error: any): void {
+//         observer.next(error);
+//         });
+//     });
+// }
 
 }

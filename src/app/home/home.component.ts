@@ -20,13 +20,13 @@ export class HomeComponent {
 
    ngOnInit(){
 
-    navigator.geolocation.getCurrentPosition((position) => {
-      this.latitude = position.coords.latitude;
-      this.longitude = position.coords.longitude;
+    // navigator.geolocation.getCurrentPosition((position) => {
+    //   this.latitude = position.coords.latitude;
+    //   this.longitude = position.coords.longitude;
 
 
-      this.getLocation(this.latitude,this.longitude);
-    });
+    //   this.getLocation(this.latitude,this.longitude);
+    // });
 
    this.registerUser = this.fb.group({
     username : new FormControl('',[Validators.required, Validators.pattern('^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})|(^[0-9]{10})+$')]),
@@ -61,14 +61,14 @@ export class HomeComponent {
      this.router.navigate([], { fragment: "carform" });
   }
 
-  detailLocation:any;
-  getLocation(latitude:any,longitude:any){
-  this.apiservice.getLocation(latitude,longitude)
-  .subscribe((getLoc:any)=>{
-    console.log('get location Data',getLoc)
-    this.detailLocation=getLoc;
-  })
-  }
+  // detailLocation:any;
+  // getLocation(latitude:any,longitude:any){
+  // this.apiservice.getLocation(latitude,longitude)
+  // .subscribe((getLoc:any)=>{
+  //   console.log('get location Data',getLoc)
+  //   this.detailLocation=getLoc;
+  // })
+  // }
 
   // submitUser(formValue:any){
     submitUser(){
